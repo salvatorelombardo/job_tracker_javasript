@@ -1,0 +1,81 @@
+<main id="viewJobContacts">
+    {{!--
+    <div class='form-row'> --}} {{!--
+        <div class="col-12"> --}}
+            <h2>View Job Contacts</h2>
+            {{!-- </div> --}} {{!--
+        <div class="col-12"> --}}
+            <p>Select the account you want to view job contacts</p>
+            <p>Hover over any red icons to see the error message</p>
+            {{!-- </div> --}} {{!-- </div> --}}
+    <div class='row'>
+        <div class="col-md-6">
+            {{{accountselect}}}
+        </div>
+    </div>
+
+    <div id='result' class="viewJobsContacts">
+
+    </div>
+
+</main>
+
+{{!-- {{#if viewJobContacts}} --}}
+<!--<main id="viewJobContacts">
+    <div>
+        <div class='form-row'>
+            <div class="col-12">
+                <h1>Job Contacts</h1>
+            </div>
+            <div class="col-12">
+                <p>Select the account and job you want to view contacts for</p>
+                <p>Hover over any red icons to see the error message</p>
+            </div>
+        </div>
+        <button class="btn btn-secondary dropdown-toggle mb-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Select account
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Account 1</a>
+            <a class="dropdown-item" href="#">Account 2</a>
+            <a class="dropdown-item" href="#">Account 3</a>
+        </div>
+        <button class="btn btn-secondary dropdown-toggle mb-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Select Job
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Fakejob 1</a>
+            <a class="dropdown-item" href="#">Fakejob 2</a>
+            <a class="dropdown-item" href="#">Fakejob 3</a>
+        </div>
+        <form>
+            <table class="table border">
+                <thead class='thead-light'>
+                    <tr>
+                        <th class="border">Name</th>
+                        <th class="border">Work Phone</th>
+                        <th class="border">Mobile Phone</th>
+                        <th class="border">Email</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class=' border'>Contact 1</td>
+
+                        <td class=" border">999-999-9999</td>
+                        <td class=" border">999-999-9999</td>
+                        <td class=" border">contact@test.com</td>
+
+
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </form>
+    </div>
+</main>
+{{!-- {{/if}} --}}

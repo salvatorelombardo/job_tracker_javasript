@@ -1,0 +1,276 @@
+/* GENERAL */
+
+/** {
+    color: #fff
+}
+
+body {
+    height: 100vh;
+    background: #2C3539;
+}
+*/
+
+nav ul,
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+nav,
+main {
+    display: block
+}
+
+input[type="button"] {
+    cursor: pointer;
+}
+
+/* CLASSES */
+
+.error {
+    color: #F00;
+}
+
+.popover-header {
+    background: #F00;
+    color: #FFF;
+}
+
+/*.custom-file-control {width: 530px;}*/
+
+.custom-file-control:after {
+    content: attr(data-content) !important
+}
+
+.addassetform,
+.jobform,
+#invoicedates {
+    display: none;
+}
+
+#joblist .mg15,
+.mg15,
+.joblist {
+    margin: 15px 0 .5rem 0;
+}
+
+.deleteContact input {
+    cursor: pointer;
+}
+
+.posrel {
+    position: relative;
+}
+
+/*FORM*/
+
+.fa {
+    color: red
+}
+
+form {
+    max-width: 50em
+}
+
+form .col {
+    width: auto
+}
+
+.btn-primary {
+    background-color: #48E5C2 !important;
+    border-color: #48E5C2 !important
+}
+
+.btn-danger {
+    background-color: #FF1493 !important;
+    border-color: #FF1493 !important
+}
+
+.btn-secondary {
+    background-color: #B1DDF1 !important;
+    border-color: #B1DDF1 !important
+}
+
+.custom-file-label::after {
+    background-color: #9F87AF !important;
+    border-color: #9F87AF !important;
+    color: #fff
+}
+
+/* ID */
+
+#result {
+    margin-top: 20px
+}
+
+#noteform,
+#assetform,
+#jobHoursForm {
+    display: none;
+}
+
+#notetext,
+#description {
+    width: 520px;
+    height: 150px;
+}
+
+#updateform {
+    position: absolute;
+    background: #FFF;
+    border: 1px solid black;
+    z-index: 1000;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, .3);
+    width: 550px;
+    left: 50%;
+    margin-left: -225px;
+    display: none;
+}
+
+#printinvoiceBtn {
+    margin: 0 0 0 10px;
+}
+
+/* HEADER */
+
+header {
+    background: #2C3539;
+    height: 80px;
+}
+
+header h1 {
+    color: #FF1493;
+    line-height: 80px
+}
+
+/* NAVIGATION */
+
+#mainnav {
+    background: #eee;
+}
+
+#mainnav a {
+    color: #000
+}
+
+#mainnav .navbar {
+    padding: .5rem 0;
+}
+
+/* MAIN */
+
+main {
+    padding: 20px 10px 10px
+}
+
+#displayinvoice {
+    padding: 5px;
+    margin: 20px 0 0 0;
+}
+
+#header h2 span {
+    display: block;
+    font-size: .6em
+}
+
+#header {
+    position: relative;
+}
+
+#header #account {
+    position: absolute;
+    right: 0
+}
+
+#header #business {
+    position: absolute;
+}
+
+#header {
+    height: 100px;
+    background: #eee;
+    padding: 5px
+}
+
+/* MESSAGE BOX */
+
+#msgbox {
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    display: none;
+    z-index: 1000;
+}
+
+#msgbox .box {
+    width: 400px;
+    border-radius: 5px;
+    margin: 50px auto;
+}
+
+#msgbox .box .heading {
+    background: blue;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#msgbox .box .body {
+    background: #FFF;
+    position: relative;
+    border-radius: 0 0 5px 5px;
+    min-height: 100px;
+    font-size: 16px;
+    padding: 15px 8px 50px 8px;
+}
+
+#msgbox .box .body .btns {
+    margin: 10px 0 0 0;
+    overflow: auto;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+#msgbox .box .body .btns input {
+    float: right;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #286090;
+    color: #FFF;
+    outline: none;
+    display: none;
+}
+
+#msgbox .box .body #leftbtn {
+    margin: 0 5px 0 0;
+}
+
+@media print {
+    header,
+    nav,
+    .noprint {
+        display: none;
+    }
+}

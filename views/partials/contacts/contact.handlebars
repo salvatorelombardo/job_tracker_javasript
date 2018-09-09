@@ -1,0 +1,42 @@
+{{#if contact}}
+<main id="contact">
+    <div>
+        <div class='form-row'>
+            <div class="col-12">
+                <h1>Add Contact</h1>
+            </div>
+            <div class="col-12">
+                <p>Enter your contact information then click "Add Contact"</p>
+                <p>Hover over any red icons to see the error message</p>
+            </div>
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="col-md mb-3">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" value="Name" placeholder="Name">
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md mb-3">
+                    <label for="phone">Work Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="666-666-6666">
+                </div>
+            </div>
+            <div class="form-row mb-3">
+                <div class="col-md">
+                    <label for="phoneOpt">Mobile Phone</label>
+                    <input type="text" class="form-control" id="phoneOpt" placeholder="666-666-6666">
+                </div>
+                <div class="col-md mb-3">
+                    <label for="email">E-mail</label>
+                    <input type="text" class="form-control" id="email" placeholder="email">
+                </div>
+            </div>
+
+            <button class="btn btn-primary" type="button" id="" data-action="add">Add Contact</button>
+        </form>
+    </div>
+</main>
+{{/if}}

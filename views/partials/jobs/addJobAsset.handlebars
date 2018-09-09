@@ -1,0 +1,108 @@
+<main id="addJobAsset">
+    {{!--
+    <div class='form-row'> --}} {{!--
+        <div class="col-12"> --}}
+            <h2>Add Job Asset</h2>
+            {{!-- </div> --}} {{!--
+        <div class="col-12"> --}}
+            <p>Select the account and job you want to add a note to</p>
+            <p>Hover over any red icons to see the error message</p>
+            {{!-- </div> --}} {{!-- </div> --}}
+    <div class='row'>
+        <div class="col-md-6">
+            {{{accountselect}}}
+        </div>
+    </div>
+
+
+    <div id='result' class="addJobNote mb-3 row">
+
+
+    </div>
+    <div id="addassetform" class="addassetform">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name">Job Asset Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Job Asset Name" value="fakeasset">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 input-group">
+                <!--  <label for="file">Job Asset File</label>
+                <br>
+                <label class="custom-file">
+                    <input type="file" id="file" class="custom-file-input">
+                    <span class="custom-file-control"></span>
+                </label>-->
+
+                <div class="input-group-prepend mb-3">
+                    <span class="input-group-text">Upload</span>
+                </div>
+                <div class="custom-file mb-3">
+                    <input type="file" class="custom-file-input" id="file">
+                    <label class="custom-file-label" for="file">Choose Job Asset</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="button" id="addJobAssetButton" class="btn btn-primary" style="margin-top: 10px" value="Add Asset">
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!--{{#if addJobAsset}}
+<main id="addJobAsset">
+    <div class='form-row'>
+        <div class="col-12">
+            <h1>Add Job Asset</h1>
+        </div>
+        <div class="col-12">
+            <p>Select the account you want to add a job to.</p>
+            <p>Hover over any red icons to see the error message</p>
+        </div>
+    </div>
+    <button class="btn btn-secondary dropdown-toggle mb-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        Select account
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Account 1</a>
+        <a class="dropdown-item" href="#">Account 2</a>
+        <a class="dropdown-item" href="#">Account 3</a>
+    </div>
+    <button class="btn btn-secondary dropdown-toggle mb-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        Select Job
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Fakejob 1</a>
+        <a class="dropdown-item" href="#">Fakejob 2</a>
+        <a class="dropdown-item" href="#">Fakejob 3</a>
+    </div>
+    <form>
+        <div class="form-row">
+            <div class=" col-sm-8 mb-3">
+                <label for="name">Asset Name</label>
+                <input type="text" class="form-control" id="name" value="Name" placeholder="Name">
+            </div>
+
+            <div class="col-sm-5 input-group mb-3">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" for='text'>
+                    <label class="custom-file-label" id="text">Browse</label>
+                </div>
+            </div>
+
+        </div>
+        <button class="btn btn-primary" type="button" id="validateinfoBtn" data-action="add">Add Account</button>
+    </form>
+
+
+
+</main>
+{{/if}}-->

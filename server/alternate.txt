@@ -1,0 +1,107 @@
+"use strict";
+/* PULL IN OUR DEPENDENCIES */
+var express = require('express'),
+	router = express.Router(),
+	multer = require('multer'),
+	/* GET CONTROLLER FILES
+	NOTE: HERE I CREATED A CONTROLLER FOR EACH SECTION. THIS IS JUST ONE WAY OF DOING IT I COULD HAVE DONE IT PER PAGE OR ANOTHER TYPE OF GROUPING */
+	login = require('../controllers/admin/login'),
+	home = require('../controllers/admin/home'),
+
+	/*ACCOUNTS*/
+	account = require('../controllers/admin/account'),
+	addAccountAsset = require('../controllers/admin/account'),
+	updateAA = require('../controllers/admin/account'),
+	viewDA = require('../controllers/admin/account'),
+
+
+	// ACCOUNTS POST
+	addAccountPost = require('../controllers/admin/account'),
+	updateAccountPost = require('../controllers/admin/account'),
+	addAccountAssetPost = require('../controllers/admin/account'),
+
+
+
+	/*CONTACTS*/
+	contact = require('../controllers/admin/contact'),
+	updateC = require('../controllers/admin/contact'),
+	manageC = require('../controllers/admin/contact'),
+	deleteC = require('../controllers/admin/contact'),
+
+	//CONTACT POST
+	addContactPost = require('../controllers/admin/contact'),
+
+	/*JOBS*/
+	addJob = require('../controllers/admin/job'),
+	addJobAsset = require('../controllers/admin/job'),
+	addJobHours = require('../controllers/admin/job'),
+	addJobNote = require('../controllers/admin/job'),
+	viewDeleteJobAsset = require('../controllers/admin/job'),
+	viewJobContacts = require('../controllers/admin/job'),
+	viewUpdateDeleteJobNote = require('../controllers/admin/job'),
+	updateDeleteJobHours = require('../controllers/admin/job'),
+	printInvoice = require('../controllers/admin/job')
+
+
+
+
+
+
+module.exports = function (app) {
+	/* GET STATEMENTS */
+	/* LOGIN */
+	router.get('/', login.index);
+
+	/* HOME */
+	router.get('/home', home.index);
+
+	/* ACCOUNTS */
+	router.get('/account', account.addAccountForm);
+	// router.get('/add_account_form', account.addAccountForm);
+
+	router.get('/addAccountAsset', addAccountAsset.addAccountAssetsForm);
+	router.get('/updateAccount', updateAA.updateAccountForm);
+	router.get('/viewDeleteAccountAsset', viewDA.viewDeleteAccount);
+
+	//ACCOUNTS POST
+	router.post('/addUpdateAccount', account.addUpdateAccount); //THIS EITHER ADDS OR UPDATES THE ACCOUNT
+	router.post('/addAccountPost', account.addAccountPost);
+	router.post('/updateAccountPost', account.updateAccountPost);
+	router.post('/addAccountAssetPost', account.addAccountAssetPost);
+	router.post('/addAccountAsset', multer({
+		dest: './tmp'
+	}).single('file'), addAccountAsset.addAccountAsset);
+	router.post('/getAccount', account.getAccount); //THIS GETS THE ACCOUNT FORM WHICH IS POPULATED WITH THE ACCOUNT INFORMATION WHEN THE PROPER ACCOUNT IS SELECTED FROM THE DROPDOWN BOX.
+	router.post('/getAssetTable', account.getAssetTable);
+	router.post('/deleteAccountAsset', account.deleteAsset);
+
+
+	/*CONTACTS*/
+	router.get('/contact', contact.getContact);
+	router.get('/updateContact', updateC.updateContact);
+	router.get('/manageContact', manageC.manageContact);
+	router.get('/deleteContact', deleteC.deleteContact);
+
+	// CONTACTS POST
+	router.post('/addContactPost', contact.addContactPost);
+
+	/* JOBS */
+	router.get('/addJob', addJob.getJob);
+	router.get('/addJobAsset', addJobAsset.addJA);
+	router.get('/addJobHours', addJobHours.addJH);
+	router.get('/addJobNote', addJobNote.addJN);
+	router.get('/viewDeleteJobAsset', viewDeleteJobAsset.vdJA);
+	router.get('/viewJobContacts', viewJobContacts.vJC);
+	router.get('/viewUpdateDeleteJobNote', viewUpdateDeleteJobNote.vudJN);
+	router.get('/updateDeleteJobHours', updateDeleteJobHours.udjHours);
+	router.get('/printInvoice', printInvoice.pI);
+
+
+	/* POST STATEMENTS */
+	router.post('/login', login.login);
+
+
+
+
+	app.use(router);
+}

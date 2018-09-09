@@ -1,0 +1,58 @@
+<!--{{#if deleteAccount}}
+<main id="viewDelete">
+
+    <div class="updateAccount">
+        <div class='form-row'>
+            <div class="col-12">
+                <h1>View Delete Account Asset</h1>
+            </div>
+            <div class="col-12">
+                <p>Enter your account information then click "Add Account"</p>
+                <p>Hover over any red icons to see the error message</p>
+            </div>
+        </div>
+        <button class="btn btn-secondary dropdown-toggle mb-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Select account
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Account 1</a>
+            <a class="dropdown-item" href="#">Account 2</a>
+            <a class="dropdown-item" href="#">Account 3</a>
+        </div>
+        <form>
+            <table class="table border  table-hover table-responsive-sm">
+                <thead class='thead-light'>
+
+                    <th class="col-9 border">Name</th>
+                    <th class="col-3 border">Delete</th>
+
+                </thead>
+                <tbody>
+
+                    <th class='col-9 border'>fakeasset1</th>
+
+                    <td class='col-3 border'>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </td>
+
+
+                </tbody>
+            </table>
+        </form>
+
+    </div>
+</main>
+{{/if}}-->
+
+<main id="viewDeleteAccountAsset">
+    <h2>View Delete Account Assets</h2>
+    <p>Select the account you want to add the asset to.</p>
+    <p>If any red icons appear hover over the icon to see the error message.</p>
+    <div class="row">
+        <div class="col-md-6">
+            {{{accountselect}}}
+        </div>
+    </div>
+    <div id="result" class="assettable"></div>
+</main>

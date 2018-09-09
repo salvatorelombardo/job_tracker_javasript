@@ -1,0 +1,25 @@
+{
+  "name": "jobtrackerstudentversion",
+  "version": "1.0.0",
+  "description": "This is the student version of the job tracker application",
+  "author": "Scott Shaper",
+  "license": "ISC",
+  "//": [
+    "The nodemon allows the server to restart when a server file is updated.",
+    "I used the nodemonConfig to ignore certain folders because their contents are",
+    "front end files that do not require a sever reload"
+  ],
+  "nodemonConfig": {
+    "ignore": ["public/*", "views/*"]
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "express-session": "^1.12.1",
+    "mysql": "^2.13.0",
+    "bcrypt": "^1.0.3",
+    "multer": "^1.3.0"
+
+  }
+}

@@ -1,0 +1,129 @@
+<main id="addJobHours">
+    {{!--
+    <div class='form-row'> --}} {{!--
+        <div class="col-12"> --}}
+            <h2>Add Job Hours</h2>
+            {{!-- </div> --}} {{!--
+        <div class="col-12"> --}}
+            <p>Select the account and job you want to add hours to.</p>
+            <p>Hover over any red icons to see the error message.</p>
+            {{!-- </div> --}} {{!-- </div> --}}
+    <div class='row'>
+        <div class="col-md-6">
+            {{{accountselect}}}
+        </div>
+    </div>
+
+    <div id='result' class="addJobHoursForm row mb-3">
+
+    </div>
+
+    <div id='jobHourForm' class='addassetform'>
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+                <label for="dateFormat">Date</label>
+                <input type="date" class="form-control" id="dateFormat" placeholder="Date">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 mb-3">
+                <label for="number">Hours</label>
+                <input type="text" class="form-control" id="number" placeholder="Hours">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="hours">Hourly Rate</label>
+                <input type="text" class="form-control" id="hours" placeholder="Hourly Rate">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3 ">
+                <label for="text">Description</label>
+                <textarea type="textarea" rows="10" class="form-control" id="text" placeholder="Description"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class='col-md-6'>
+                <button class="btn btn-primary" type="button" id="addJobHoursButton" data-action="add">Add Job Hours</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</main>
+
+
+
+<!--{{#if addJobHours}}
+<main id="addJobHours">
+    <div class='form-row'>
+        <div class="col-12">
+            <h1>Add Job Hours</h1>
+        </div>
+        <div class="col-12">
+            <p>Select the account you want to add a job to</p>
+            <p>Hover over any red icons to see the error message</p>
+        </div>
+    </div>
+    <button class="btn btn-secondary dropdown-toggle mb-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        Select account
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Account 1</a>
+        <a class="dropdown-item" href="#">Account 2</a>
+        <a class="dropdown-item" href="#">Account 3</a>
+    </div>
+    <button class="btn btn-secondary dropdown-toggle mb-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        Select Job
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Fakejob 1</a>
+        <a class="dropdown-item" href="#">Fakejob 2</a>
+        <a class="dropdown-item" href="#">Fakejob 3</a>
+    </div>
+    <form>
+        <div class="form-row">
+            <div class="col-md mb-3 col-lg">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name" value="Name">
+            </div>
+
+        </div>
+        <div class="form-row">
+            <div class="col-md mb-3">
+                <label for="dateFormat">Date</label>
+                <input type="date" class="form-control" id="dateFormat" placeholder="">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md mb-3">
+                <label for="text">Note Title</label>
+                <input type="text" class="form-control" id="text" placeholder="Fake Job Note" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md mb-3">
+                <label for="alphaNum">Note Text</label>
+                <textarea type="textarea" rows="10" class="form-control" id="alphaNum" placeholder="Fake job note text here" required></textarea>
+            </div>
+
+        </div>
+
+        <button class="btn btn-primary" type="button" id="validateinfoBtn" data-action="add">Add Job Note</button>
+    </form>
+
+
+
+
+</main>
+{{/if}}-->

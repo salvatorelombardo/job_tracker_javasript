@@ -1,0 +1,68 @@
+{{#if nav}}
+<div id="mainnav">
+	<div class="container">
+		<nav class="navbar navbar-expand-md navbar-light bg-faded">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+			 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="home">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Accounts
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="add_account_form">Add Account</a>
+							<a class="dropdown-item" href="update_account_form">Update Account</a>
+							<a class="dropdown-item" href="add_assets">Add Assets to Account</a>
+							<a class="dropdown-item" href="view_delete_assets">View Delete Account Assets</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Contacts
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="add_contact_form">Add Contact</a>
+							<a class="dropdown-item" href="update_contact_form">Update Contact</a>
+							<a class="dropdown-item" href="manage_contacts_form">Manage Contacts</a>
+							<a class="dropdown-item" href="view_delete_contact">Delete Contact</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Jobs
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="add_jobs_form">Add Job</a>
+							<a class="dropdown-item" href="view_job_contact">View Job Contacts</a>
+							<a class="dropdown-item" href="add_job_note">Add Job Note</a>
+							<a class="dropdown-item" href="view_update_delete_job_note">View/Update/Delete Job Notes</a>
+							<a class="dropdown-item" href="add_job_asset">Add Asset to Job</a>
+							<a class="dropdown-item" href="view_job_asset">View/Delete Job Assets</a>
+							<a class="dropdown-item" href="add_job_hours">Add Job Hours</a>
+							<a class="dropdown-item" href="update_delete_job_hours">Update/Delete Job Hours</a>
+							<a class="dropdown-item" href="print_job_invoice">Print Invoice</a>
+						</div>
+					</li>
+
+
+					<li class="nav-item">
+						<a class="nav-link" href="logout">Log Out</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div>
+{{/if}}

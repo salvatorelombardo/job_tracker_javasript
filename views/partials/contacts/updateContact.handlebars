@@ -1,0 +1,63 @@
+<!--{{#if updateContact}}
+<main id="updateContact">
+    <div>
+        <div class='form-row'>
+            <div class="col-12">
+                <h1>Update Contact</h1>
+            </div>
+            <div class="col-12">
+                <p>Enter your contact information then click "Add Contact"</p>
+                <p>Hover over any red icons to see the error message</p>
+            </div>
+        </div>
+        <button class="btn btn-secondary dropdown-toggle mb-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Select account
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Account 1</a>
+            <a class="dropdown-item" href="#">Account 2</a>
+            <a class="dropdown-item" href="#">Account 3</a>
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="col-md mb-3">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name" value="Name">
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md mb-3">
+                    <label for="phone">Work Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="666-666-6666">
+                </div>
+            </div>
+            <div class="form-row mb-3">
+                <div class="col-md">
+                    <label for="phoneOpt">Mobile Phone</label>
+                    <input type="text" class="form-control" id="phoneOpt" placeholder="666-666-6666">
+                </div>
+                <div class="col-md mb-3">
+                    <label for="email">E-mail</label>
+                    <input type="text" class="form-control" id="email" placeholder="Zip">
+                </div>
+            </div>
+
+            <button class="btn btn-primary" type="button" id="validateinfoBtn" data-action="add">Add Contact</button>
+        </form>
+    </div>
+</main>
+{{/if}}-->
+
+<main id="updateContact">
+    <h2>Update Contact</h2>
+    <p>Select the contact you want to update.</p>
+    <p>If any red icons appear hover over the icon to see the error message.</p>
+    <div class="row">
+        <div class="col-md-6">
+            {{{contactselect}}}
+        </div>
+    </div>
+    <div id="result"></div>
+</main>

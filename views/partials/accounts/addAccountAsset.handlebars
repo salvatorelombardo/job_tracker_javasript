@@ -1,0 +1,35 @@
+<main id="accountAsset">
+    <h2>Add Account Assets</h2>
+    <p>Select the account you want to add the asset to.</p>
+    <p>If any red icons appear hover over the icon to see the error message.</p>
+    <div class="row">
+        <div class="col-md-6">
+            {{{accountselect}}}
+        </div>
+    </div>
+    <div id="result" class="addassetform">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name">Asset Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Asset Name" value="fakeasset">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="file">Asset File</label>
+                <br>
+                <label class="custom-file">
+                    <input type="file" id="file" class="custom-file-input">
+                    <span class="custom-file-control"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="button" id="addAsset" class="btn btn-primary" style="margin-top: 10px" value="Add Asset">
+            </div>
+        </div>
+    </div>
+</main>

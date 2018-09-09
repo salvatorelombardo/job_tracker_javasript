@@ -1,0 +1,1 @@
+This file can be removed it was added so Github would include the folder.  Make sure you add the folder to the job_tracker application and set the permissions to 777.

@@ -1,0 +1,75 @@
+<!--{{#if deleteContact}}
+<main id="deleteContact">
+    <div>
+        <div class='form-row'>
+            <div class="col-12">
+                <h1>Delete Contacts</h1>
+            </div>
+            <div class="col-12">
+                <p>Select the contact you want to delete. Contact will be deleted from all jobs its associated with.</p>
+                <p>Hover over any red icons to see the error message</p>
+            </div>
+        </div>
+        <button class="btn btn-secondary dropdown-toggle mb-4" type="button" id="updateContact" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Select Contact
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Contact 1</a>
+            <a class="dropdown-item" href="#">Contact 2</a>
+            <a class="dropdown-item" href="#">Contact 3</a>
+        </div>
+        <form>
+            <table class="table border  table-hover table-responsive-sm">
+                <thead class='thead-light'>
+                    <tr>
+                        <th class="border">Name</th>
+                        <th class="border">Work Phone</th>
+                        <th class="border">Mobile Phone</th>
+                        <th class="border">Email</th>
+                        <th class="border">Delete</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class=' border'>Contact 1</td>
+
+                        <td class=" border">999-999-9999</td>
+                        <td class=" border">999-999-9999</td>
+                        <td class=" border">contact@test.com</td>
+                        <td class="border">
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+            <button class="btn btn-secondary dropdown-toggle mb-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Select account
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Account 1</a>
+                <a class="dropdown-item" href="#">Account 2</a>
+                <a class="dropdown-item" href="#">Account 3</a>
+            </div>
+
+
+        </form>
+    </div>
+</main>
+{{/if}}-->
+
+<main id="viewDeleteContact">
+    <h2>View Delete Contact</h2>
+    <p>Select the contact you want to delete.</p>
+    <p>If any red icons appear hover over the icon to see the error message.</p>
+    <div class="row">
+        <div class="col-md-6">
+            {{!-- {{{contactselect}}} --}}
+        </div>
+    </div>
+    <div id="result" class="contactable"></div>
+</main>
