@@ -279,7 +279,7 @@ module.exports = {
         sql = "INSERT INTO account_job_contact (job_id, contact_id) VALUES (?, ?)";
 
         queries.bindedOther(sql, values, function (err, result) {
-            // console.log('values = ' + values + `+` + " result =" + result);
+            console.log('values = ' + values + `+` + " result =" + result);
             // return
             /* TECHNICALLY HERE I SHOULD ALSO REMOVE THE FOLDER I JUST CREATED */
             if (err) {
@@ -292,9 +292,10 @@ module.exports = {
             } else {
 
 
+
                 values.shift();
 
-                // console.log(values);
+                console.log(values);
 
                 // return
                 sql = "SELECT account.name AS accountName, job.name AS jobName, account_job_contact.id AS id FROM account, job, account_job_contact WHERE account_job_contact.job_id = job.id AND job.account_id = account.id AND contact_id = ?";
