@@ -2,7 +2,7 @@
   "name": "jobtrackerstudentversion",
   "version": "1.0.0",
   "description": "This is the student version of the job tracker application",
-  "author": "Scott Shaper",
+  "author": "Salvatore Lombardo",
   "license": "ISC",
   "//": [
     "The nodemon allows the server to restart when a server file is updated.",
